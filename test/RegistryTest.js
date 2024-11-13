@@ -44,7 +44,7 @@ describe("CarbonCreditRegistry Contract", function () {
 
         await expect(
             registry.connect(addr1).markCreditAsUsed(4)
-        ).to.be.revertedWith("Não Autorizado");
+        ).to.be.revertedWith("Not authorized");
         
         const credit = await registry.credits(4);
         console.log("Tentativa de terceiro de marcar como usado falhou, crédito:", credit);
@@ -57,7 +57,7 @@ describe("CarbonCreditRegistry Contract", function () {
 
         await expect(
             registry.connect(owner).markCreditAsUsed(5)
-        ).to.be.revertedWith("Crédito já usado");
+        ).to.be.revertedWith("Credit already used");
 
         const credit = await registry.credits(5);
         console.log("Verificação de reutilização, crédito:", credit);
