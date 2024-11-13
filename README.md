@@ -28,10 +28,6 @@ Este projeto ilustra como a blockchain pode fornecer uma camada de confiança e 
     ```bash
     npm install
 
-    #Caso tenha erros nos próximos passos, talvez seja necessário rodar as dependências uma a uma:
-    npm install @openzeppelin/contracts @chainlink/contracts
-    npm install --save-dev hardhat
-    npm install @nomicfoundation/hardhat-toolbox
 3. **Compile**
     ```bash
     npx hardhat compile
@@ -41,6 +37,9 @@ Este projeto ilustra como a blockchain pode fornecer uma camada de confiança e 
 5. **Empregue os Contratos**
     ```bash
     npx hardhat run scripts/deploy.js
-6. **Interaja com os Contratos (em outro console)**
+6. **Faça os testes**
+    ```bash
+    npx hardhat test
+7. **Interaja com os Contratos (em outro console)**
     ```bash
     npx hardhat console
