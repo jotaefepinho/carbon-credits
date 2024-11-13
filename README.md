@@ -7,9 +7,6 @@ Este projeto implementa um sistema de compensação de créditos de carbono na b
 - [Motivação](#motivação)
 - [Arquitetura do Projeto](#arquitetura-do-projeto)
 - [Instalação e Configuração](#instalação-e-configuração)
-- [Contratos Principais](#contratos-principais)
-- [Testes](#testes)
-- [Licença](#licença)
 
 ## Motivação
 
